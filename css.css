@@ -1,0 +1,398 @@
+@keyframes backgroundGradient {
+  0% {
+      background-color: #000000;
+  }
+  25% {
+      background-color: #1a1a1a;
+  }
+  50% {
+      background-color: #333333;
+  }
+  75% {
+      background-color: #1a1a1a;
+  }
+  100% {
+      background-color: #000000;
+  }
+}
+#div-center {
+  width: 50%;
+  max-width: 580px;
+  min-height: 45vh;      /* کاهش بیشتر */
+  max-height: 800px;     /* کاهش بیشتر */
+  color: black;
+  padding: 1.5rem;       /* کاهش پدینگ */
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin: 3rem auto;
+  /*
+  background-color: #123D5F;
+  */
+  background-color: #333333;
+  top: 4rem;
+  
+}
+
+#logo{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 24rem;
+  left: 3.55rem;
+
+
+
+}
+
+
+
+@keyframes glowing {
+  0% {
+      box-shadow: 0 0 5px 2px #fff,
+                 0 0 10px 4px #fff;
+      opacity: 0.4;
+  }
+  50% {
+      box-shadow: 0 0 15px 5px #fff,
+                 0 0 25px 10px #fff;
+      opacity: 0.8;
+  }
+  100% {
+      box-shadow: 0 0 5px 2px #fff,
+                 0 0 10px 4px #fff;
+      opacity: 0.4;
+  }
+}
+#point{
+
+  width: 2px;              
+  height: 2px;             
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;               /* قرار دادن در وسط عمودی */
+  left: 5%;              /* قرار دادن در وسط افقی */
+  transform: translate(-50%, -50%); /* تنظیم دقیق مرکز */
+  animation: glowing 4s ease-in-out infinite;
+
+}
+
+#line{
+  width: 2px;              
+  height: 100%;             
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;               /* قرار دادن در وسط عمودی */
+  left: 20%;              /* قرار دادن در وسط افقی */
+  transform: translate(-50%, -50%); /* تنظیم دقیق مرکز */
+  
+    /* outer glow */
+}
+#fullname{
+  width: 100px;              
+  height: 100%;             
+  
+  position: absolute;
+                /* قرار دادن در وسط عمودی */
+  left: 20%;      
+  color: white;     
+  
+  
+  font-family: 'Abel', sans-serif;;
+  font-weight: 500;  /* ضخیم */
+  font-size: 0.75rem;/* قرار دادن در وسط افقی */
+  line-height: 1;
+
+}
+
+#fullname p {
+  
+  margin: 0;         /* حذف حاشیه پیش‌فرض پاراگراف‌ها */
+  padding: 2px 0;    /* افزودن فاصله کم بین خطوط */
+}
+#profile-img {
+  width: 30%;
+  min-width: 250px;
+  height: auto;
+  min-height: 200px;
+  border-radius: 10%;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+
+  background-image: url('./him.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 3px solid white;
+  
+}
+
+#about {
+  width: 50%;
+  min-width: 250px;
+  height: auto;
+  min-height: 300px;      
+  max-height: 400px;      
+  position: absolute;
+  bottom: 1rem;          
+  right: 1rem; 
+  font-family: 'Abel', sans-serif;;
+  font-weight: 600;  /* ضخیم */
+  font-size: 1rem;
+  color: #ffffff;  /* White text color */
+
+}
+
+
+
+/* استایل‌های مشترک */
+#one, #two, #three {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 0rem;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  min-height: 50px;
+}
+
+#one {
+  right: 1rem;  /* از سمت راست */
+  background-image: url('./icons8-linkedin-50.png');
+  background-position: right;
+  
+}
+
+#two {
+  right: 4.35rem;  /* وسط */
+  background-image: url('./icons8-telegram-50.png');
+  background-position: center;
+
+}
+
+#three {
+  right: 8rem;  /* سمت چپ */
+  background-image: url('./icons8-github-30.png');
+  background-position: right;
+ 
+}
+#contact {
+  width: 30%;
+  min-width: 150px;
+  height: auto;
+  min-height: 130px;  
+  max-height: 200px;  
+  position: absolute;
+  bottom: 9rem;
+  left: 2rem;
+  
+  color: #ffffff; 
+  
+  
+  font-family: 'Rubik', sans-serif;;
+  font-weight: 700;  /* ضخیم */
+  font-size: 1rem;/* اضافه کردن بیرون‌زدگی */
+
+/*
+  background-image: url('./icons8-linkedin-50.png');
+  background-size: 30px 30px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;  
+  */
+}
+
+#name {
+  width: 55%;              /* افزایش عرض از 40% به 45% */
+  min-width: 300px;        /* افزایش حداقل عرض */
+  max-width: 600px;        /* افزایش حداکثر عرض */
+  height: auto;
+  min-height: 150px;       /* افزایش حداقل ارتفاع */
+  max-height: 500px;       /* افزایش حداکثر ارتفاع */
+  position: absolute;
+  top: 1.5rem;             /* اضافه کردن بیرون‌زدگی */
+  right: 1.5rem;   
+  color: #ffffff; 
+  
+  
+  font-family: 'Rubik', sans-serif;;
+  font-weight: 700;  /* ضخیم */
+  font-size: 1.3rem;/* اضافه کردن بیرون‌زدگی */
+}
+
+
+
+body {
+  background-color: #A7B7B5;  /* رنگ خاکستری روشن */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  animation: backgroundGradient 8s ease-in-out infinite;
+  background-color: #333333;
+}
+
+@media screen and (max-width: 480px) {
+  #div-center {
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #profile-img {
+    position: static;
+    width: 120px;
+    height: 120px;
+    margin-top: 1rem;
+    order: 1;
+  }
+  
+  #name {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 2;
+  }
+  
+  #about {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 3;
+  }
+  
+  #contact {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 4;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #div-center {
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #profile-img {
+    position: static;
+    width: 120px;
+    height: 120px;
+    margin-top: 1rem;
+    order: 1;
+  }
+  
+  #name {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 2;
+  }
+  
+  #about {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 3;
+  }
+  
+  #contact {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 4;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تعریف انیمیشن */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* اعمال انیمیشن روی المان‌های متنی */
+#name, #about, #contact {
+  animation: slideFromLeft 2s ease-out forwards;
+}
+
+/* تاخیر متفاوت برای هر المان */
+#name {
+  animation-delay: 0.2s;
+}
+
+#about {
+  animation-delay: 0.4s;
+}
+
+#contact {
+  animation-delay: 0.6s;
+}
+
+/* برای متن‌های داخل المان‌ها */
+#name h2, #name p, 
+#about p, 
+#contact h2 {
+  opacity: 0;
+  animation: slideFromLeft 1.5s ease-out forwards;
+  animation-delay: 0.8s;
+}
