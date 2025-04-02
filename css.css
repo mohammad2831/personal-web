@@ -1,37 +1,16 @@
-@keyframes backgroundGradient {
-  0% {
-      background-color: #000000;
-  }
-  25% {
-      background-color: #1a1a1a;
-  }
-  50% {
-      background-color: #333333;
-  }
-  75% {
-      background-color: #1a1a1a;
-  }
-  100% {
-      background-color: #000000;
-  }
-}
 #div-center {
   width: 50%;
   max-width: 580px;
-  min-height: 45vh;      /* کاهش بیشتر */
-  max-height: 800px;     /* کاهش بیشتر */
+  min-height: 45vh;     
+  max-height: 800px;   
   color: black;
-  padding: 1.5rem;       /* کاهش پدینگ */
+  padding: 1.5rem;      
   text-align: center;
   border-radius: 1rem;
   position: relative;
   margin: 3rem auto;
-  /*
-  background-color: #123D5F;
-  */
   background-color: #333333;
   top: 4rem;
-  
 }
 
 #logo{
@@ -40,32 +19,9 @@
   position: absolute;
   top: 24rem;
   left: 3.55rem;
-
-
-
 }
 
-
-
-@keyframes glowing {
-  0% {
-      box-shadow: 0 0 5px 2px #fff,
-                 0 0 10px 4px #fff;
-      opacity: 0.4;
-  }
-  50% {
-      box-shadow: 0 0 15px 5px #fff,
-                 0 0 25px 10px #fff;
-      opacity: 0.8;
-  }
-  100% {
-      box-shadow: 0 0 5px 2px #fff,
-                 0 0 10px 4px #fff;
-      opacity: 0.4;
-  }
-}
 #point{
-
   width: 2px;              
   height: 2px;             
   background-color: #ffffff;
@@ -75,7 +31,6 @@
   left: 5%;              /* قرار دادن در وسط افقی */
   transform: translate(-50%, -50%); /* تنظیم دقیق مرکز */
   animation: glowing 4s ease-in-out infinite;
-
 }
 
 #line{
@@ -86,31 +41,25 @@
   top: 50%;               /* قرار دادن در وسط عمودی */
   left: 20%;              /* قرار دادن در وسط افقی */
   transform: translate(-50%, -50%); /* تنظیم دقیق مرکز */
-  
-    /* outer glow */
 }
+
 #fullname{
   width: 100px;              
-  height: 100%;             
-  
+  height: 100%;               
   position: absolute;
-                /* قرار دادن در وسط عمودی */
   left: 20%;      
   color: white;     
-  
-  
   font-family: 'Abel', sans-serif;;
   font-weight: 500;  /* ضخیم */
   font-size: 0.75rem;/* قرار دادن در وسط افقی */
   line-height: 1;
-
 }
 
 #fullname p {
-  
   margin: 0;         /* حذف حاشیه پیش‌فرض پاراگراف‌ها */
   padding: 2px 0;    /* افزودن فاصله کم بین خطوط */
 }
+
 #profile-img {
   width: 30%;
   min-width: 250px;
@@ -120,14 +69,11 @@
   position: absolute;
   top: -1rem;
   left: -1rem;
-
   background-image: url('./him.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   border: 3px solid white;
-  
 }
 
 #about {
@@ -143,12 +89,8 @@
   font-weight: 600;  /* ضخیم */
   font-size: 1rem;
   color: #ffffff;  /* White text color */
-
 }
 
-
-
-/* استایل‌های مشترک */
 #one, #two, #three {
   width: 20%;
   height: 20%;
@@ -163,23 +105,21 @@
 #one {
   right: 1rem;  /* از سمت راست */
   background-image: url('./icons8-linkedin-50.png');
-  background-position: right;
-  
+  background-position: right;  
 }
 
 #two {
   right: 4.35rem;  /* وسط */
   background-image: url('./icons8-telegram-50.png');
   background-position: center;
-
 }
 
 #three {
   right: 8rem;  /* سمت چپ */
   background-image: url('./icons8-github-30.png');
   background-position: right;
- 
 }
+
 #contact {
   width: 30%;
   min-width: 150px;
@@ -188,22 +128,11 @@
   max-height: 200px;  
   position: absolute;
   bottom: 9rem;
-  left: 2rem;
-  
+  left: 2rem;  
   color: #ffffff; 
-  
-  
   font-family: 'Rubik', sans-serif;;
   font-weight: 700;  /* ضخیم */
   font-size: 1rem;/* اضافه کردن بیرون‌زدگی */
-
-/*
-  background-image: url('./icons8-linkedin-50.png');
-  background-size: 30px 30px; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;  
-  */
 }
 
 #name {
@@ -217,14 +146,10 @@
   top: 1.5rem;             /* اضافه کردن بیرون‌زدگی */
   right: 1.5rem;   
   color: #ffffff; 
-  
-  
   font-family: 'Rubik', sans-serif;;
   font-weight: 700;  /* ضخیم */
   font-size: 1.3rem;/* اضافه کردن بیرون‌زدگی */
 }
-
-
 
 body {
   background-color: #A7B7B5;  /* رنگ خاکستری روشن */
@@ -235,16 +160,26 @@ body {
   background-color: #333333;
 }
 
+
+
+
+
 @media screen and (max-width: 480px) {
+
   #div-center {
     width: 95%;
-    padding: 1rem;
+    min-height: 150vh;        /* حداقل ارتفاع برابر با ارتفاع viewport */
+    height: auto;             /* ارتفاع خودکار براساس محتوا */
+    padding: 2rem 1rem;       /* افزایش padding */
     margin: 1rem auto;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;               /* افزایش فاصله بین المان‌ها */
+    display: flex;
+    top: 0rem;
+    position: relative;
   }
+
   
   #profile-img {
     position: static;
@@ -264,11 +199,14 @@ body {
   
   #about {
     position: static;
-    width: 90%;
-    min-width: auto;
-    margin: 0.5rem auto;
+
+    min-height: 300px;  
+    max-height: 350px;  
+    overflow-y: auto;  
     order: 3;
   }
+    
+  
   
   #contact {
     position: static;
@@ -276,58 +214,171 @@ body {
     min-width: auto;
     margin: 0.5rem auto;
     order: 4;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  #div-center {
-    width: 95%;
-    padding: 1rem;
-    margin: 1rem auto;
+    top: 10rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* چینش عمودی */
+
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  #contact h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+
+  #logo {
+    position: static;
+    width: 50%;
+    margin: -2rem auto 2rem auto; /* افزایش margin منفی در بالا */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 5;
+    height: 80px;
+    top: -2rem;        /* حرکت به سمت بالا */
+    transform: translateY(-20px); /* حرکت اضافی به بالا */
+  }
+
+
+#fullname, #point, #line {
+    position: static;
+    justify-content: center;
+    align-items: center;
+  }
+  #fullname{
+    height: 50px;
+    position: absolute;
+    top: 1.5rem;
+  }
+ 
+  #line{    
+    position: absolute;
+    top: 1.5rem;       /* شروع خط کمی پایین‌تر از نقطه */
+    height: 70px;
+    transform: translateX(-50%);
   }
   
-  #profile-img {
-    position: static;
-    width: 120px;
-    height: 120px;
-    margin-top: 1rem;
-    order: 1;
+  #point {
+    position: absolute;
+    top: 1rem;          /* تغییر موقعیت به بالا */
+             /* مرکز افقی */
+    transform: translateX(-50%);
+    width: 4px;        /* اندازه بزرگتر برای دید بهتر */
+    height: 4px;
+    margin: 0;
+    z-index: 2;        /* اطمینان از نمایش روی سایر المان‌ها */
   }
+
+#one, #two, #three {
   
-  #name {
+
     position: static;
-    width: 90%;
-    min-width: auto;
-    margin: 0.5rem auto;
-    order: 2;
   }
+  #three{
+    background-position: left;
+  }
+  #point, #line, #fullname {
+    position: relative;
+  }
+
+  /* ترتیب سایر المان‌ها */
+  #profile-img { order: 1; }
   
-  #about {
-    position: static;
-    width: 90%;
-    min-width: auto;
-    margin: 0.5rem auto;
-    order: 3;
-  }
+  #name { order: 2; }
+  #about { order: 3; }
+  #contact { order: 4; }
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@media screen and (max-width: 480px) {  
+  #div-center {
+  width: 95%;
+  padding: 1rem;
+  margin: 0;          
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; 
+  top: 0;           
+}
+
+#contact {
+  position: relative; 
+  width: 90%;
+  min-width: auto;
+  margin: 1rem auto; 
+  order: 2;    
+  top: -2rem;        
+}
+
+
+#profile-img {
+  order: 1;
+  margin-top: 2rem;
+}
+
+#name {
+  order: 3;
+}
+
+
+#about {
+  position: static;
+  width: 90%;
+  min-width: auto;
+  margin: 0.5rem auto;
+  order: 3;
   
-  #contact {
-    position: static;
-    width: 90%;
-    min-width: auto;
-    margin: 0.5rem auto;
-    order: 4;
-  }
+}
+#contact {
+  border: 1px solid yellow; 
+}
 }
 
 
 
 
 
+*/
 
 
 
@@ -358,17 +409,7 @@ body {
 
 
 
-/* تعریف انیمیشن */
-@keyframes slideFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 
 /* اعمال انیمیشن روی المان‌های متنی */
 #name, #about, #contact {
@@ -395,4 +436,59 @@ body {
   opacity: 0;
   animation: slideFromLeft 1.5s ease-out forwards;
   animation-delay: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes backgroundGradient {
+  0% {
+      background-color: #000000;
+  }
+  25% {
+      background-color: #1a1a1a;
+  }
+  50% {
+      background-color: #333333;
+  }
+  75% {
+      background-color: #1a1a1a;
+  }
+  100% {
+      background-color: #000000;
+  }
+}
+/* تعریف انیمیشن */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+      box-shadow: 0 0 5px 2px #fff,
+                 0 0 10px 4px #fff;
+      opacity: 0.4;
+  }
+  50% {
+      box-shadow: 0 0 15px 5px #fff,
+                 0 0 25px 10px #fff;
+      opacity: 0.8;
+  }
+  100% {
+      box-shadow: 0 0 5px 2px #fff,
+                 0 0 10px 4px #fff;
+      opacity: 0.4;
+  }
 }
