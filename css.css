@@ -165,22 +165,19 @@ body {
 
 
 @media screen and (max-width: 480px) {
-
   #div-center {
     width: 95%;
-    min-height: 150vh;        /* حداقل ارتفاع برابر با ارتفاع viewport */
-    height: auto;             /* ارتفاع خودکار براساس محتوا */
-    padding: 2rem 1rem;       /* افزایش padding */
+    min-height: 150vh;       
+    height: auto;           
+    padding: 2rem 1rem;    
     margin: 1rem auto;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;               /* افزایش فاصله بین المان‌ها */
+    gap: 2rem;              
     display: flex;
     top: 0rem;
     position: relative;
   }
-
-  
   #profile-img {
     position: static;
     width: 120px;
@@ -188,7 +185,6 @@ body {
     margin-top: 1rem;
     order: 1;
   }
-  
   #name {
     position: static;
     width: 90%;
@@ -196,18 +192,13 @@ body {
     margin: 0.5rem auto;
     order: 2;
   }
-  
   #about {
     position: static;
-
     min-height: 300px;  
     max-height: 350px;  
     overflow-y: auto;  
     order: 3;
   }
-    
-  
-  
   #contact {
     position: static;
     width: 90%;
@@ -216,8 +207,7 @@ body {
     order: 4;
     top: 10rem;
     display: flex;
-    flex-direction: column;  /* چینش عمودی */
-
+    flex-direction: column; 
     align-items: center;
     gap: 2rem;
     padding: 1rem;
@@ -227,28 +217,18 @@ body {
     width: 100%;
     text-align: center;
   }
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-  }
-
-
   #logo {
     position: static;
     width: 50%;
-    margin: -2rem auto 2rem auto; /* افزایش margin منفی در بالا */
+    margin: -2rem auto 2rem auto; 
     display: flex;
     justify-content: center;
     align-items: center;
     order: 5;
     height: 80px;
-    top: -2rem;        /* حرکت به سمت بالا */
-    transform: translateY(-20px); /* حرکت اضافی به بالا */
+    top: -2rem;      
+    transform: translateY(-20px); 
   }
-
-
 #fullname, #point, #line {
     position: static;
     justify-content: center;
@@ -259,40 +239,87 @@ body {
     position: absolute;
     top: 1.5rem;
   }
- 
   #line{    
     position: absolute;
-    top: 1.5rem;       /* شروع خط کمی پایین‌تر از نقطه */
+    top: 1.5rem;   
     height: 70px;
     transform: translateX(-50%);
-  }
-  
+  } 
   #point {
     position: absolute;
-    top: 1rem;          /* تغییر موقعیت به بالا */
-             /* مرکز افقی */
+    top: 1rem;        
     transform: translateX(-50%);
-    width: 4px;        /* اندازه بزرگتر برای دید بهتر */
+    width: 4px;      
     height: 4px;
     margin: 0;
-    z-index: 2;        /* اطمینان از نمایش روی سایر المان‌ها */
-  }
-
-#one, #two, #three {
-  
-
-    position: static;
-  }
-  #three{
-    background-position: left;
+    z-index: 2;        
   }
   #point, #line, #fullname {
     position: relative;
   }
 
-  /* ترتیب سایر المان‌ها */
-  #profile-img { order: 1; }
+
+
+
+  .social-icons {
+   
+    display: flex;
+    justify-content: center; /* حرکت آیکون‌ها به سمت راست */
+    gap: 3rem; /* فاصله مناسب بین آیکون‌ها */
+    width: 100%;
+    border: none; /* حذف border برای شفافیت */
+    
+  }
   
+  #one, #two, #three {
+    width: 38px; /* کاهش اندازه آیکون‌ها */
+    height: 38px; /* کاهش اندازه آیکون‌ها */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    left: 0.5rem;
+  }
+  
+  #one {
+    background-image: url('./icons8-linkedin-50.png');
+    background-position: center;
+  }
+  
+  #two {
+    background-image: url('./icons8-telegram-50.png');
+    background-position: center;
+  }
+  
+  #three {
+    background-image: url('./icons8-github-30.png');
+    background-position: center;
+  }
+  
+  /* تنظیم موقعیت آیکون‌ها */
+  #one, #two, #three {
+    display: inline-block;
+    z-index: 10; /* اطمینان از اینکه آیکون‌ها روی سایر المان‌ها قرار گیرند */
+  }
+  
+
+
+  #contact {
+    position: static;
+    width: 90%;
+    min-width: auto;
+    margin: 0.5rem auto;
+    order: 4;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+
+  #profile-img { order: 1; }
   #name { order: 2; }
   #about { order: 3; }
   #contact { order: 4; }
