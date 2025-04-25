@@ -161,7 +161,7 @@ body {
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #div-center {
     width: 95%;
     min-height: 150vh;       
